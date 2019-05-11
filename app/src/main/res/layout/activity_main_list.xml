@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_list_group">
+
+    <RadioButton
+        android:id="@+id/ViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View List"
+        android:button="@drawable/list"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="3dp"
+        />
+
+    <RadioButton
+        android:id="@+id/AddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/addstudent"
+        android:layout_below="@id/ViewList"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Add Student"
+        android:paddingLeft="3dp"
+        />
+
+    <RadioButton
+        android:id="@+id/AddTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/addteacher"
+        android:layout_below="@id/AddStudent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Add Teacher"
+        android:paddingLeft="3dp"/>
+    </RadioGroup>
+</RelativeLayout>

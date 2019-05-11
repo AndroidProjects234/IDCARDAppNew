@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">IDCARDApp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="takephoto">Take Photo</string>
+    <string name="gender">Gender</string>
+    <string name="male">M</string>
+    <string name="female">F</string>
+    <string name="contact">Contact</string>
+    <string name="submit">Submit</string>
+    <string name="qualification">Qualification</string>
+    <string name="department">Department</string>
+    <string name="college">College</string>
+    <string name="position">Position</string>
+    <string name="DOJ">DOJ</string>
+    <string name="WorkExp">Work Exp.</string>
+    <string name="student_list">Student</string>
+    <string name="optionview">View</string>
+    <string name="optionmodify">Modify</string>
+    <string name="optiondelete">Delete</string>
+    <string name="OK">OK</string>
+    <string name="OK1">OK</string>
+    <string name="teacher_list">teacher_list</string>
+    <string name="StudentList">Student</string>
+    <string name="List">List</string>
+    <string name="search">Search</string>
+    <string name="teacher">Teacher</string>
+    <string name="logout">LOGOUT</string>
+    <string name="StudentID">Student ID</string>
+    <string name="StudentBatch">Batch</string>
+    <string name="StudentCourse">Course</string>
+    <string name="image">Capture Your Image</string>
+</resources>

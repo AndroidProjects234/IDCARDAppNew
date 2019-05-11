@@ -1,0 +1,210 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Details"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ViewStudentImage"
+            android:src="@drawable/takephoto1"
+            android:tag="@string/takephoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textName"
+            android:text="Name"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/ViewStudentImage"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewStudentName"
+            android:layout_below="@id/ViewStudentImage"
+            android:layout_toRightOf="@id/textName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textFName"
+            android:text="F.Name"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textName"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewStudentFName"
+            android:layout_below="@id/ViewStudentName"
+            android:layout_toRightOf="@id/textFName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textMName"
+            android:text="M.Name"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textFName"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewStudentMName"
+            android:layout_below="@id/ViewStudentFName"
+            android:layout_toRightOf="@id/textMName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAddress"
+            android:text="Address"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textMName"
+            />
+
+        <TextView
+            android:id="@+id/ViewStudentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ViewStudentMName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@id/textMName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textGender"
+            android:text="@string/gender"
+            android:layout_below="@id/textAddress"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ViewGender"
+            android:layout_below="@+id/ViewStudentAddress"
+            android:layout_toRightOf="@id/textGender"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textStudentID"
+            android:text="@string/StudentID"
+            android:layout_below="@id/textGender"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ViewStudentID"
+            android:layout_below="@+id/ViewGender"
+            android:layout_toRightOf="@id/textGender"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textStudentCourse"
+            android:text="@string/StudentCourse"
+            android:layout_below="@id/textStudentID"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ViewStudentCourse"
+            android:layout_below="@+id/ViewStudentID"
+            android:layout_toRightOf="@id/textStudentCourse"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textStudentBatch"
+            android:text="@string/StudentBatch"
+            android:layout_below="@id/textStudentCourse"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ViewStudentBatch"
+            android:layout_below="@+id/ViewStudentCourse"
+            android:layout_toRightOf="@id/textStudentBatch"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:id="@+id/textContact"
+            android:layout_below="@id/textStudentBatch"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/ViewStudentContact"
+            android:layout_below="@+id/ViewStudentBatch"
+            android:layout_toRightOf="@id/textContact"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="45dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/StudentOK"
+            android:text="@string/OK"
+            android:background="@drawable/bg_button"
+            android:layout_below="@id/ViewStudentContact"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</ScrollView>

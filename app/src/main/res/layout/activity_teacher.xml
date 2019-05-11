@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear1"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Form"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+             />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/TeacherImage"
+            android:tag="@string/takephoto"
+            android:src="@drawable/takephoto"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:layout_marginTop="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherName"
+            android:text="Name"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/TeacherName"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear3"
+            android:layout_gravity="center"
+            android:layout_marginTop="320dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textQualification"
+                android:text="@string/qualification"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherQualification"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear4"
+            android:layout_gravity="center"
+            android:layout_marginTop="390dp">
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/tgroup"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textTeacherGender"
+                    android:text="@string/gender"
+
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TeacherMale"
+                    android:text="@string/male"
+                    android:layout_marginLeft="40dp"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TeacherFemale"
+                    android:text="@string/female"
+                    android:layout_marginLeft="60dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearGender"
+            android:layout_gravity="center"
+            android:layout_marginTop="460dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTeacherDepart"
+                android:text="@string/department"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherDepartment"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear5"
+            android:layout_gravity="center"
+            android:layout_marginTop="530dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTeacherCollege"
+                android:text="@string/college"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherCollege"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear6"
+            android:layout_gravity="center"
+            android:layout_marginTop="600dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTeacherPosition"
+                android:text="@string/position"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherPosition"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear7"
+            android:layout_gravity="center"
+            android:layout_marginTop="670dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTeacherDOJ"
+                android:text="@string/DOJ"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherDOJdd"
+                android:layout_marginLeft="40dp" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherDOJmm"
+                android:layout_marginLeft="30dp" />
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherDOJyy"
+                android:layout_marginLeft="30dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear8"
+            android:layout_gravity="center"
+            android:layout_marginTop="740dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textTeacherWorkExp"
+                android:text="@string/WorkExp"
+                android:layout_marginLeft="10dp"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherWorkExp"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear9"
+            android:layout_marginTop="810dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact"
+                android:id="@+id/textTeacherContact"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherContact"
+                android:inputType="number"
+                android:layout_marginLeft="40dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear10"
+            android:layout_marginTop="880dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TeacherSubmit"
+                android:text="@string/submit"
+                android:background="@drawable/bg_button"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="130dp"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

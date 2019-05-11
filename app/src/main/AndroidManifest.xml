@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.idcardappnew">
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/idcardicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BuckysTheme">
+
+        <activity android:name="com.example.idcardappnew.CheckActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.idcardappnew.AllListActivity"
+            android:parentActivityName="com.example.idcardappnew.MainListActivity"/>
+        <activity android:name="com.example.idcardappnew.StudentActivity" />
+        <activity android:name="com.example.idcardappnew.TeacherActivity" />
+        <activity android:name="com.example.idcardappnew.StudentList"
+            android:parentActivityName="com.example.idcardappnew.AllListActivity" />
+        <activity android:name="com.example.idcardappnew.TeacherList"
+            android:parentActivityName="com.example.idcardappnew.AllListActivity" />
+        <activity android:name="com.example.idcardappnew.ViewActivity" />
+        <activity android:name="com.example.idcardappnew.ChooseOptionActivity"
+            android:parentActivityName="com.example.idcardappnew.StudentList"/>
+        <activity android:name="com.example.idcardappnew.ChooseOptionTeacherActivity"
+            android:parentActivityName="com.example.idcardappnew.TeacherList"/>
+        <activity android:name="com.example.idcardappnew.TeacherViewActivity" />
+        <activity android:name="com.example.idcardappnew.MainListActivity"/>
+        <activity android:name="com.example.idcardappnew.LoginActivity"/>
+        <activity android:name="com.example.idcardappnew.SplashActivity"/>
+    </application>
+
+
+</manifest>

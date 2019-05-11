@@ -1,0 +1,202 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Details"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/ViewTeacherImage"
+            android:tag="@string/takephoto"
+            android:src="@drawable/takephoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherName"
+            android:text="Name"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/ViewTeacherImage"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherName"
+            android:layout_below="@id/ViewTeacherImage"
+            android:layout_toRightOf="@id/textTeacherName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textQualification"
+            android:text="@string/qualification"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/textTeacherName"
+            />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherQualification"
+            android:layout_below="@id/ViewTeacherName"
+            android:layout_toRightOf="@id/textQualification"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherGender"
+            android:text="@string/gender"
+            android:layout_below="@id/textQualification"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/Viewgender"
+            android:layout_below="@+id/ViewTeacherQualification"
+            android:layout_toRightOf="@id/textTeacherGender"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherDepart"
+            android:text="@string/department"
+            android:layout_below="@id/textTeacherGender"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherDepartment"
+            android:layout_below="@id/Viewgender"
+            android:layout_toRightOf="@id/textTeacherDepart"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherCollege"
+            android:text="@string/college"
+            android:layout_below="@id/textTeacherDepart"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherCollege"
+            android:layout_below="@id/ViewTeacherDepartment"
+            android:layout_toRightOf="@id/textTeacherCollege"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherPosition"
+            android:text="@string/position"
+            android:layout_below="@id/textTeacherCollege"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherPosition"
+            android:layout_below="@id/ViewTeacherCollege"
+            android:layout_toRightOf="@id/textTeacherPosition"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherDOJ"
+            android:text="@string/DOJ"
+            android:layout_below="@id/textTeacherPosition"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherDOJ"
+            android:layout_below="@id/ViewTeacherPosition"
+            android:layout_toRightOf="@id/textTeacherDOJ"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTeacherWorkExp"
+            android:text="@string/WorkExp"
+            android:layout_below="@id/textTeacherDOJ"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ViewTeacherWorkExp"
+            android:layout_below="@id/ViewTeacherDOJ"
+            android:layout_toRightOf="@id/textTeacherWorkExp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:id="@+id/textTeacherContact"
+            android:layout_below="@id/textTeacherWorkExp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/ViewTeacherContact"
+            android:layout_below="@+id/ViewTeacherWorkExp"
+            android:layout_toRightOf="@id/textTeacherContact"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="45dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TeacherOK"
+            android:text="@string/OK1"
+            android:background="@drawable/bg_button"
+            android:layout_below="@id/ViewTeacherContact"
+            android:layout_marginTop="45dp"
+            android:layout_centerHorizontal="true"/>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

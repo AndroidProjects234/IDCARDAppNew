@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TeacherFilter"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="@string/search"
+        android:drawableLeft="@drawable/search"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TeacherList"
+        android:layout_marginTop="70dp"
+        android:listSelector="@drawable/list_selector"/>
+
+</RelativeLayout>

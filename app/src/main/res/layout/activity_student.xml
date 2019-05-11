@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="Student Form"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/StudentImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:tag="@string/image"
+            android:src="@drawable/takephoto1"
+            app:civ_border="true"
+
+            />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentImage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/StudentName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentImage"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textName" />
+
+        <TextView
+            android:id="@+id/textFName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="F.Name" />
+
+        <EditText
+            android:id="@+id/StudentFName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textFName" />
+
+        <TextView
+            android:id="@+id/textMName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textFName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="M.Name" />
+
+        <EditText
+            android:id="@+id/StudentMName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentFName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textMName" />
+
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textMName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/StudentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentMName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textMName" />
+
+        <TextView
+            android:id="@+id/textGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/gender" />
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentAddress"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/textGender"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/StudentAddress"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/textGender"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textStudentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textGender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/StudentID" />
+
+        <EditText
+            android:id="@+id/StudentID"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textGender" />
+
+
+        <TextView
+            android:id="@+id/textStudentCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textStudentID"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/StudentCourse" />
+
+        <Spinner
+            android:id="@+id/StudentCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentID"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textStudentCourse" />
+
+        <TextView
+            android:id="@+id/textStudentBatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textStudentCourse"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/StudentBatch" />
+
+        <Spinner
+            android:id="@+id/StudentBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentCourse"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textStudentBatch" />
+
+
+
+        <TextView
+            android:id="@+id/textContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textStudentBatch"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/contact" />
+
+        <EditText
+            android:id="@+id/StudentContact"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StudentBatch"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textContact"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/StudentSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/StudentContact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/submit" />
+    </RelativeLayout>
+
+
+</ScrollView>

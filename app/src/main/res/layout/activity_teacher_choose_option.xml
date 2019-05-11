@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/optiongroup">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TeacherOptionView"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/view"
+            android:paddingLeft="3dp"
+            android:text="@string/optionview"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TeacherOptionModify"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/redo"
+            android:paddingLeft="3dp"
+            android:text="@string/optionmodify"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TeacherOptionDelete"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/delete"
+            android:paddingLeft="3dp"
+            android:text="@string/optiondelete"/>
+
+    </RadioGroup>
+
+</LinearLayout>
