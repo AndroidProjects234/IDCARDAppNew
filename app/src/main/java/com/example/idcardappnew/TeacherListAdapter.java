@@ -39,6 +39,7 @@ public class TeacherListAdapter extends ArrayAdapter {
         Bitmap bitmap= BitmapFactory.decodeByteArray(teacherimage,0,teacherimage.length);
         image.setImageBitmap(bitmap);
         name.setText(tb.getTeachername());
+
         return customView;
     }
     public void filter(String str){

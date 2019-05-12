@@ -32,12 +32,14 @@ public class StudentListAdapter extends ArrayAdapter {
         View customView=inflater.inflate(R.layout.activity_studentlistadapter,parent,false);
         CircularImageView image=(CircularImageView)customView.findViewById(R.id.StudentListImage);
         TextView name=(TextView)customView.findViewById(R.id.StudentListName);
+        TextView id=(TextView)customView.findViewById(R.id.StudentListId);
         StudentBean sb=new StudentBean();
         sb=list.get(position);
         byte[] studentimage=sb.getStudentimage();
         Bitmap bitmap= BitmapFactory.decodeByteArray(studentimage,0,studentimage.length);
         image.setImageBitmap(bitmap);
         name.setText(sb.getStudentname());
+        id.setText(sb.getStudentid());
         return customView;
     }
     public void filter(String str){
@@ -46,7 +48,7 @@ public class StudentListAdapter extends ArrayAdapter {
             list.addAll(templist);
         }else{
             for(StudentBean sb:templist){
-                if(sb.getStudentname().toString().trim().startsWith(str)){
+                if(sb.getStudentname().toString().trim().startsWith(str)||sb.getStudentid().startsWith(str)){
                     list.add(sb);
                 }
             }
